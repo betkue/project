@@ -108,7 +108,7 @@ export default function Dashboard() {
                       `${name} ${(percent * 100).toFixed(0)}%`
                     }
                   >
-                    {parsedCountInComposition.map((entry: any, index: number) => (
+                    {parsedCountInComposition.map((_entry: any, index: number) => (
                       <Cell
                         key={`cell-${index}`}
                         fill={COLORS[index % COLORS.length]}
