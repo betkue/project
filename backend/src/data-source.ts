@@ -6,7 +6,7 @@ import { VehicleEntity } from './entity/vehicle.entity';
 
 export const dataSource = new DataSource({
     type: 'postgres',
-     host: 'database',//'localhost',
+     host: 'localhost',
     port: 5432,
     username: 'postgres',
     password: 'postgres',
