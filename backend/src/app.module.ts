@@ -25,7 +25,7 @@ import { VehicleModule } from './vehicles/vehicle.module';
               // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
               store: new CacheableMemory({ lruSize: 5000 }),
             }),
-            createKeyv('redis://localhost:6379'),
+            createKeyv('redis://default@redis:6379'),
           ],
         };
       },
