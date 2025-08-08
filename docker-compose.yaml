@@ -93,7 +93,7 @@ services:
       dockerfile: backend/Dockerfile
     restart: unless-stopped
     ports:
-      - "3100:3000"
+      - "3000:3000"
     networks:
       - beev-network
     depends_on:
@@ -113,7 +113,7 @@ services:
       dockerfile: frontend/Dockerfile
     restart: unless-stopped
     ports:
-      - "8100:8080"
+      - "8000:8080"
     networks:
       - beev-network
     depends_on:
